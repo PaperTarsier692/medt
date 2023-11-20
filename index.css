@@ -1,0 +1,223 @@
+body {
+  transition: 1s;
+  background-color: #323232;
+}
+
+.title {
+  position: relative;
+}
+
+.dark-mode {
+  transition: 1s;
+  background-color: white;
+}
+
+#darkModeButton.light-mode {
+  transition: 1s;
+  background-image: url("white.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#darkModeButton.dark-mode {
+  transition: 1s;
+  background-image: url("dark.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#darkModeButton {
+  position: absolute;
+  right: 0.6%;
+  top: 5.4%;
+  width: 50px;
+  height: 50px;
+  text-indent: -9999px;
+  background: transparent;
+  outline: none;
+  z-index: 2;
+}
+
+#oldButton {
+  display: None;
+}
+
+.selection_buttons {
+  transition-duration: 1s;
+  border-radius: 25px;
+  border: 2px solid #0d451d;
+  padding: -50px;
+  width: 100px;
+  height: 75px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: transparent;
+}
+
+.selection_buttons:hover {
+  transition-duration: 0.25s;
+  border-radius: 25px;
+  border: 2px solid #12652a;
+  padding: -20px;
+  width: 100px;
+  height: 75px;
+  background-color: #12652a;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: transparent;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info_fields {
+  transition-duration: 2s;
+  border-radius: 25px;
+  border: 2px solid #12652a;
+  padding: -20px;
+  width: 200px;
+  height: 150px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.info_fields:hover {
+  transition-duration: 0.25s;
+  border-radius: 25px;
+  border: 2px solid #12652a;
+  padding: -20px;
+  width: 200px;
+  height: 150px;
+  background-color: #12652a;
+  text-align: center;
+}
+
+.selection_buttons_text {
+  position: relative;
+  font-size: 140%;
+  color: rgb(91, 115, 255);
+  text-justify: distribute;
+  text-align: justify;
+  background-color: transparent;
+}
+
+.sticky_island {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+h1,
+h2 {
+  font-family: Arial;
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+}
+
+h1 {
+  border-bottom: 2px dotted black;
+  background-image: url("mountain.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+h2 {
+  background: url("font.jpg") no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(148, 176, 176);
+  font-size: larger;
+}
+
+a {
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(75, 172, 172);
+  text-decoration: underline;
+}
+
+a:visited {
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(58, 53, 180);
+  text-decoration: dashed;
+}
+
+hr {
+  border-top: 2px dotted black;
+}
+
+.galerie_fotos {
+  transition-duration: 0.5s;
+  border-radius: 20px, 20px;
+  border: 1px solid #464646;
+  align-content: center;
+  width: 200px;
+  height: 200px;
+  border-bottom-left-radius: 15%;
+  border-top-right-radius: 15%;
+  border-bottom-right-radius: 15%;
+  border-top-left-radius: 15%;
+}
+
+.galerie_fotos:hover {
+  transition-duration: 0.5s;
+  border-radius: 20px, 20px;
+  border: 1px solid #464646;
+  align-content: center;
+  width: 230px;
+  height: 230px;
+  border-bottom-left-radius: 15%;
+  border-top-right-radius: 15%;
+  border-bottom-right-radius: 15%;
+  border-top-left-radius: 15%;
+}
+
+.clear {
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.nav_buttons {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  background-image: url("camera.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 30px;
+  float: right;
+}
+
+.container:hover .overlay-text {
+  opacity: 1;
+}

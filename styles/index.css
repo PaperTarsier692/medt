@@ -192,15 +192,27 @@ hr {
   clear: both;
 }
 
-.container {
-  position: relative;
-  display: inline-block;
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav_buttons {
-  display: flex;
-  justify-content: space-between;
-  background-color: transparent;
+  display: inline;
+  border: 10px solid black;
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+.nav_buttons a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
 }
 
 .socials_icons_island {

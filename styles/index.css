@@ -194,17 +194,23 @@ hr {
 
 .navbar {
   list-style-type: none;
-  margin: 0;
+  margin: 990;
   padding: 0;
+  display: block;
+  left: 27%;
+  position: absolute;
+  top: -25%;
+  z-index: 2;
 }
 
 .nav_buttons {
   display: inline;
-  border: 10px solid black;
+  border: 6px solid black;
   background-color: black;
   padding: 0;
   margin: 0;
   float: left;
+  transition: 0.5s;
 }
 
 .nav_buttons a {
@@ -213,6 +219,17 @@ hr {
   text-align: center;
   padding: 14px 16px;
   text-decoration: underline;
+}
+
+.nav_buttons:hover {
+  border: 6px solid #12652a;
+  background-color: #12652a;
+  transition: 0.4s;
+}
+
+.active {
+  background-color: #45c715;
+  color: white;
 }
 
 .socials_icons_island {

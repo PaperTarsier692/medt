@@ -228,6 +228,7 @@ hr {
 }
 
 .active {
+  border: 6px solid #45c715;
   background-color: #45c715;
   color: white;
 }
